@@ -9,6 +9,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { FooterComponent } from './footer/footer.component';
 import { VideosComponent } from './videos/videos.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [
@@ -18,6 +20,9 @@ import { VideosComponent } from './videos/videos.component';
       { path: '', component: ProductListComponent },
       { path: 'goods', component: ProductListComponent },
       { path: 'videos', component: VideosComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'contact', component: ContactComponent },
+
 
     ])
   ],
@@ -27,7 +32,9 @@ import { VideosComponent } from './videos/videos.component';
     ProductListComponent,
     JumbotronComponent,
     FooterComponent,
-    VideosComponent
+    VideosComponent,
+    AboutComponent,
+    ContactComponent
   ],
   bootstrap: [
     AppComponent
